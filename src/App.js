@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Router } from '@reach/router'
+import Nav from './route'
+import Main from './components/views/Main'
+import About from './components/views/About'
+import Items from './components/views/Items'
+import Item from './components/views/Item'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Router>
+        <Main path="/" />
+        <About path="about" />
+        <Items path="items" />
+        <Item path="items/:itemId" />
+      </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
