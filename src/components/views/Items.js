@@ -32,6 +32,7 @@ const Items = () => {
         variant="outlined">
         {slugs.map((elem, i) => (
           <Link
+            key={`${elem}-${i}`}
             to={`${elem}`}
             // {...props}
             getProps={() => {
@@ -41,7 +42,7 @@ const Items = () => {
                 },
               }
             }}>
-            <CardContent css={classes.content} key={`${elem}-${i}`}>
+            <CardContent css={classes.content}>
               <Typography
                 css={classes.title}
                 color="textSecondary"
