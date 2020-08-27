@@ -24,36 +24,30 @@ const classes = {
 
 const slugs = [1, 2, 3, 'stuff', 'goes', 'here']
 
-const Items = () => {
-  return (
-    <div>
-      <Card
-        style={{ display: 'inline-block', minWidth: 275 }}
-        variant="outlined">
-        {slugs.map((elem, i) => (
-          <Link
-            to={`${elem}`}
-            // {...props}
-            getProps={() => {
-              return {
-                style: {
-                  textDecoration: 'none',
-                },
-              }
-            }}>
-            <CardContent css={classes.content} key={`${elem}-${i}`}>
-              <Typography
-                css={classes.title}
-                color="textSecondary"
-                gutterBottom>
-                Item {elem}
-              </Typography>
-            </CardContent>
-          </Link>
-        ))}
-      </Card>
-    </div>
-  )
-}
+const Items = () => (
+  <div>
+    <Card style={{ display: 'inline-block', minWidth: 275 }} variant="outlined">
+      {slugs.map((elem, i) => (
+        <Link
+          key={`${elem}-${i}`}
+          to={`${elem}`}
+          // {...props}
+          getProps={() => {
+            return {
+              style: {
+                textDecoration: 'none',
+              },
+            }
+          }}>
+          <CardContent css={classes.content}>
+            <Typography css={classes.title} color="textSecondary" gutterBottom>
+              Item {elem}
+            </Typography>
+          </CardContent>
+        </Link>
+      ))}
+    </Card>
+  </div>
+)
 
 export default Items
