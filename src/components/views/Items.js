@@ -1,45 +1,35 @@
+/** @jsx jsx */
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { jsx, css } from '@emotion/core'
 import { Link } from '@reach/router'
-import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
 import Typography from '@material-ui/core/Typography'
 
-const useStyles = makeStyles({
-  root: {
-    minWidth: 275,
-    maxWidth: 400,
-    display: 'inline-block',
-  },
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
-  content: {
-    border: '1px solid #a3e9f7',
-    '&:hover': {
-      backgroundColor: '#a3e9f7',
-      border: '1px solid grey',
-    },
-  },
-  title: {
-    fontSize: 16,
-    fontFamily: 'Optima, sans-serif',
-    fontWeight: 'bold',
-  },
-  pos: {
-    marginBottom: 12,
-  },
-})
+const classes = {
+  title: css`
+    font-size: 16;
+    font-family: Optima, sans-serif;
+    font-weight: bold;
+  `,
+  content: css`
+    border: 1px solid #a3e9f7;
+    &:hover {
+      background-color: #a3e9f7;
+      border: 1px solid grey;
+    }
+  `,
+}
 
 const slugs = [1, 2, 3, 'stuff', 'goes', 'here']
 
-const Items = (props) => {
-  const classes = useStyles()
+const Items = () => {
   return (
     <div>
-      <Card className={classes.root} variant="outlined">
+      <Card
+        style={{ display: 'inline-block', minWidth: 275 }}
+        variant="outlined">
         {slugs.map((elem, i) => (
           <Link
             to={`${elem}`}
@@ -51,9 +41,9 @@ const Items = (props) => {
                 },
               }
             }}>
-            <CardContent className={classes.content} key={`${elem}-${i}`}>
+            <CardContent css={classes.content} key={`${elem}-${i}`}>
               <Typography
-                className={classes.title}
+                css={classes.title}
                 color="textSecondary"
                 gutterBottom>
                 Item {elem}
