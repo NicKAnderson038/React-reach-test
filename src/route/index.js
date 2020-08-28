@@ -10,9 +10,25 @@ const classes = {
     text-decoration: none;
     outline: none;
   `,
-  font: css`
+  nav: css`
     font-family: Alegreya Sans, sans-serif;
     font-weight: bold;
+    top: -140px;
+    right: -140px;
+    display: block;
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transform: translate3d(25px, -25px, 0);
+    transform: translate3d(25px, -25px, 0);
+    transition: -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
+    transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9),
+      -webkit-transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9);
   `,
 }
 
@@ -37,11 +53,10 @@ const routes = [
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false)
-
   const toggleHandler = () => setToggle(!toggle)
   return (
     <Fragment>
-      <nav css={classes.font} className={`top-right ${toggle ? 'open' : ''}`}>
+      <nav css={classes.nav} className={`${toggle ? 'open' : ''}`}>
         {routes.map((r) => (
           <Routes
             key={`${r.location}-${r.classes}`}
