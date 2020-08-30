@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-reach-test/static/css/main.1e8b1c74.chunk.css",
+    "main.js": "/React-reach-test/static/js/main.1b14fb64.chunk.js",
+    "main.js.map": "/React-reach-test/static/js/main.1b14fb64.chunk.js.map",
+    "runtime-main.js": "/React-reach-test/static/js/runtime-main.f67a5eb9.js",
+    "runtime-main.js.map": "/React-reach-test/static/js/runtime-main.f67a5eb9.js.map",
+    "static/js/2.f271ac9f.chunk.js": "/React-reach-test/static/js/2.f271ac9f.chunk.js",
+    "static/js/2.f271ac9f.chunk.js.map": "/React-reach-test/static/js/2.f271ac9f.chunk.js.map",
+    "index.html": "/React-reach-test/index.html",
+    "precache-manifest.25cd92949d8c94710c4c8bfcf198f9e1.js": "/React-reach-test/precache-manifest.25cd92949d8c94710c4c8bfcf198f9e1.js",
+    "service-worker.js": "/React-reach-test/service-worker.js",
+    "static/css/main.1e8b1c74.chunk.css.map": "/React-reach-test/static/css/main.1e8b1c74.chunk.css.map",
+    "static/js/2.f271ac9f.chunk.js.LICENSE.txt": "/React-reach-test/static/js/2.f271ac9f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f67a5eb9.js",
+    "static/js/2.f271ac9f.chunk.js",
+    "static/css/main.1e8b1c74.chunk.css",
+    "static/js/main.1b14fb64.chunk.js"
+  ]
+}
