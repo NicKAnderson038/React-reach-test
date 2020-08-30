@@ -23,7 +23,7 @@ const Routes = (props) => {
 }
 // const Nav = () => (
 //   <>
-//     <div className="navbar">
+//     <div className={styles.navbar}>
 //       <nav>
 //         <Link to="/">Home</Link> | <Link to="about">About</Link> |{' '}
 //         <Link to="items">Items</Link>

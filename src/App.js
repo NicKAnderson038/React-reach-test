@@ -1,5 +1,6 @@
 import React from 'react'
 import { Router } from '@reach/router'
+import styles from './app.module.css'
 import Nav from './route'
 import Main from './components/views/Main'
 import About from './components/views/About'
@@ -9,7 +10,7 @@ import Item from './components/views/Item'
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <Nav />
       <Router>
         <Main path="/" />

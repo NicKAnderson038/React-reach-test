@@ -1,0 +1,14 @@
+.title {
+  font-size: 16;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+}
+
+.content {
+  border: 1px solid #a3e9f7;
+}
+
+.content:hover {
+  background-color: #a3e9f7;
+  border: 1px solid grey;
+}
