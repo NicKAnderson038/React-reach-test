@@ -74,7 +74,7 @@ nav.open {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: tomato;
+  /* background: tomato; */
   transition-delay: 0s;
 }
 
@@ -86,15 +86,15 @@ nav.open {
 }
 
 .open .l1:hover {
-  background: shade(tomato, 90%);
-  color: #ffff66;
+  /* background: shade(tomato, 90%); */
+  color: #ffff66 !important;
   transition-delay: 0s;
 }
 
-.open .l1:active {
+/* .open .l1:active {
   background: shade(tomato, 50%);
   color: tomato;
-}
+} */
 
 .open .l1.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -106,7 +106,7 @@ nav.open {
   left: 50px;
   right: 50px;
   bottom: 50px;
-  background: #ff7a39;
+  /* background: #ff7a39; */
   transition-delay: 0.1s;
 }
 
@@ -118,15 +118,15 @@ nav.open {
 }
 
 .open .l2:hover {
-  background: shade(#ff7a39, 90%);
-  color: #ffff66;
+  /* background: shade(#ff7a39, 90%); */
+  color: #ffff66 !important;
   transition-delay: 0s;
 }
 
-.open .l2:active {
+/* .open .l2:active {
   background: shade(#ff7a39, 50%);
   color: #ff7a39;
-}
+} */
 
 .open .l2.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -138,7 +138,7 @@ nav.open {
   left: 100px;
   right: 100px;
   bottom: 100px;
-  background: #ff912b;
+  /* background: #ff912b; */
   transition-delay: 0.2s;
 }
 
@@ -150,15 +150,15 @@ nav.open {
 }
 
 .open .l3:hover {
-  background: shade(#ff912b, 90%);
-  color: #ffff66;
+  /* background: shade(#ff912b, 90%); */
+  color: #ffff66 !important;
   transition-delay: 0s;
 }
 
-.open .l3:active {
+/* .open .l3:active {
   background: shade(#ff912b, 50%);
   color: #ff912b;
-}
+} */
 
 .open .l3.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
@@ -170,7 +170,7 @@ nav.open {
   left: 150px;
   right: 150px;
   bottom: 150px;
-  background: #ffa91c;
+  /* background: #ffa91c; */
   transition-delay: 0.3s;
 }
 
@@ -182,15 +182,15 @@ nav.open {
 }
 
 .open .l4:hover {
-  background: shade(#ffa91c, 90%);
-  color: #ffff66;
+  /* background: shade(#ffa91c, 90%); */
+  color: #ffff66 !important;
   transition-delay: 0s;
 }
 
-.open .l4:active {
+/* .open .l4:active {
   background: shade(#ffa91c, 50%);
   color: #ffa91c;
-}
+} */
 
 .open .l4.toggle {
   -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
